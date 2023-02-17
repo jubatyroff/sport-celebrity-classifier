@@ -1,0 +1,171 @@
+.card-wrapper {
+    margin: 5px;
+  }
+body {
+    background-image: url("https://alfa-room.ru/image/cache/catalog/tovary/laminat/falquon/colorita/goluboy/colorita-goluboy-4410-auto_width_750.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+  background-color: white;
+}
+
+/* You can adjust the image size by increasing/decreasing the width, height */
+.custom-circle-image {
+  width: 10vw; /* note i used vw not px for better responsive */
+  height: 10vw;
+}
+
+.custom-circle-image img {
+  object-fit: cover;
+}
+
+
+.card-text {
+  font-family: MerriweatherRegular;
+  font-size: 15px;
+  line-height: initial;
+}
+
+.dropzone {
+  border-style: dashed;
+}
+
+
+.error {
+margin-left: 300px;
+}
+
+#classTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#classTable td, #classTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#classTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #424242;
+  color: white;
+}
+
+
+.container-bg {
+    background: white;
+}
+
+.result{
+  margin-bottom: 10px;
+}
+
+
+.info h3 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+@media (max-width: 767px) {
+  .info h3 {
+    font-size: 35px;
+  }
+}
+.info h6 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .info h6 {
+    font-size: 18px;
+  }
+}
+.info p {
+  font-size: 18px;
+  max-width: 630px;
+}
+.info p mark {
+  font-weight: 600;
+  color: #000000;
+}
+
+.about-list {
+  padding-top: 10px;
+}
+.about-list .media {
+  padding: 5px 0;
+}
+.about-list label {
+  color: #070707;
+  font-weight: 600;
+  width: 88px;
+  margin: 0;
+  position: relative;
+}
+.about-list label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 11px;
+  width: 1px;
+  height: 12px;
+  background: #000000;
+  -moz-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+  margin: auto;
+  opacity: 0.5;
+}
+.about-list p {
+  margin: 0;
+  font-size: 15px;
+}
+
+@media (max-width: 991px) {
+  .about-avatar {
+    margin-top: 30px;
+  }
+}
+
+.about-section .counter {
+  padding: 22px 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+}
+.about-section .counter .count-data {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.about-section .counter .count {
+  font-weight: 700;
+  color: #111111;
+  margin: 0 0 5px;
+}
+.about-section .counter p {
+  font-weight: 600;
+  margin: 0;
+}
+mark {
+    background-image: linear-gradient(rgba(51, 48, 48, 0.6), rgba(31, 30, 30, 0.6));
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    background-color: transparent;
+    padding: 0;
+    color: currentColor;
+}
+.theme-color {
+    color: #21449d;
+}
+.dark-color {
+    color: #171616;
+}

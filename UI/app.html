@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kazakh sport celebrities classification</title>
+    <link rel="stylesheet" href="dropzone.min.css">
+    <link rel="stylesheet" href="app.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazakh sport celebrities classification</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dropzone.min.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Kazakh sport celebrities classification</span>
+        <i class="fas fa-running"></i>
+    </nav>
+
+    <div class="container" style="border-radius: 10px">
+        <section class="jumbotron text-center" style="background:white; height:390px; margin-top: 20px; border-radius:10px" >
+            <h1 class="jumbotron-heading">You can classify the sport celebrities below</h1>
+                <p class="lead text-muted">
+                    <form action="/file-upload" class="dropzone" id="dropzone">
+                        <div class="dz-message needsclick">
+                         <img src="./images/upload.png" width="50vw" height="50vw"><br>
+                         <span class="note needsclick">Drop files here or click to upload</span>
+                        </div>
+                     </form>
+                 </p>
+                 <p>
+                     <button id="submitBtn" type="button" class="btn btn-dark">Classify</button>
+                 </p>
+         </section>
+
+
+
+        <div class="col-sm-8 error" id="error" >
+            <div class="alert alert-danger text-center" role="alert">
+                <p class="text-center">
+                  Can't classify image. Classifier was not able to detect face and two eyes properly
+                </p>
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 40px" >
+
+
+
+            <div class="col-sm-4" id="resultHolder">
+
+            </div>
+
+            <div class="col-sm-8" id="infoHolder">
+
+            </div>
+
+         </div>
+
+
+        <div class="row" style="margin-bottom: 20px">
+            <div class="col-sm-12" id="divClassTable" style="margin-bottom: 20px">
+                <table id="classTable">
+                        <tr>
+                            <th>Sport Celebrity</th>
+                            <th>Probability Score</th>
+                        </tr>
+                        <tr>
+                            <td>Bauyrzhan Islamkhan</td>
+                            <td id="score_bauyrzhan_islamkhan"></td>
+                        </tr>
+                        <tr>
+                            <td>Daniyar Yeleussinov</td>
+                            <td id="score_daniyar_yeleussinov"></td>
+                        </tr>
+                        <tr>
+                            <td>Denis Ten</td>
+                            <td id="score_denis_ten"></td>
+                        </tr>
+                        <tr>
+                            <td>Elena Rybakina</td>
+                            <td id="score_elena_rybakina"></td>
+                        </tr>
+                        <tr>
+                            <td>Gennady Golovkin</td>
+                            <td id="score_gennady_golovkin"></td>
+                        </tr>
+                    <tr>
+                            <td>Ilya Ilyin</td>
+                            <td id="score_ilya_ilyin"></td>
+                        </tr>
+                        <tr>
+                            <td>Janibek Alimkhanuly</td>
+                            <td id="score_janibek_alimkhanuly"></td>
+                        </tr>
+                        <tr>
+                            <td>Olga Rypakova</td>
+                            <td id="score_olga_rypakova"></td>
+                        </tr>
+                        <tr>
+                            <td>Shavkat Rakhmonov</td>
+                            <td id="score_shavkat_rakhmonov"></td>
+                        </tr>
+                        <tr>
+                            <td>Yeldos Smetov</td>
+                            <td id="score_yeldos_smetov"></td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+
+    </div>
+
+    <div class="container" style="margin-bottom: 20px; border-radius: 10px">
+
+        <div class="row">
+            <div class="col card-wrapper" data-player="bauyrzhan_islamkhan">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="images/bauyrzhan%20(27).jpeg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase card-title">bauyrzhan islamkhan</h6>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="daniyar_yeleussinov">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="images/2705110162eb985eb89989f2caefc281.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="text-uppercase card-title">daniyar yeleussinov</h6>
+                        </div>
+                    </div>
+            </div>
+            <div class="col card-wrapper" data-player="denis_ten">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="images/denis_ten%20(10).jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="text-uppercase card-title">denis ten</h6>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col card-wrapper" data-player="elena_rybakina">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="images/yelena%20(6).jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase card-title">elena rybakina</h6>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col card-wrapper" data-player="gennady_golovkin">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="images/golovkin%20(1).webp" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase card-title">gennady golovkin</h6>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+        <div class="col card-wrapper" data-player="ilya_ilyin">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="images/ilya%20(1).jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase card-title">ilya ilyin</h6>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="janibek_alimkhanuly">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="images/janibek%20(6).jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="text-uppercase card-title">janibek alimkhanuly</h6>
+                            </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="col card-wrapper" data-player="olga_rypakova">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="images/96623-image.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="text-uppercase card-title">olga rypakova</h6>
+                            </p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col card-wrapper" data-player="shavkat_rakhmonov">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="images/shavkat%20(4).jpeg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase card-title">shavkat rakhmonov</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col card-wrapper" data-player="yeldos_smetov">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="images/yeldos%20(8).jpeg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase card-title">yeldos smetov</h6>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<div class="col card-wrapper" info-player="shavkat_rakhmonov">
+
+                        <div class="info go-to" id="info">
+                            <h3 class="dark-color">Shavkat Rakhmonov</h3>
+                            <h6 class="theme-color lead">Kazakh professional mixed martial artist</h6>
+                            <p>He currently competes in the Welterweight division in the Ultimate Fighting Championship (UFC). Rakhmonov is also a former M-1 Global Welterweight Champion. As of October 3, 2022, he is #10 in the UFC welterweight rankings.</p>
+                            <div class="row about-list">
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        <label>Birthday</label>
+                                        <p>23th october 1994</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>Age</label>
+                                        <p>28 Yr</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                      <div class="media">
+                                        <label>Team</label>
+                                        <p>DREAM TEAM</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>Wins</label>
+                                        <p>16/16</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+</div>
+    <div class="col card-wrapper" info-player="yeldos_smetov">
+
+                        <div class="info go-to" id="info1">
+                            <h3 class="dark-color">Yeldos Smetov</h3>
+                            <h6 class="theme-color lead"> Kazakh judoka</h6>
+                            <p>Competes in the under 60 kg weight division. He won gold medals at the 2014 Asian Games and 2015 World Judo Championships, and a silver medal at the 2016 Olympics. He won the bronze medal at the 2020 Olympics held in Tokyo, Japan.</p>
+                            <div class="row about-list">
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        <label>Birthday</label>
+                                        <p>9th september 1992</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>Age</label>
+                                        <p>30 Yr</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                      <div class="media">
+                                        <label>Weight class</label>
+                                        <p>60 kg</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>Rank</label>
+                                        <p>4th dan black belt in Judo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+</div>
+     <div class="col card-wrapper" info-player="janibek_alimkhanuly">
+
+                        <div class="info go-to" id="info2">
+                            <h3 class="dark-color">Janibek Alimkhanuly</h3>
+                            <h6 class="theme-color lead">Kazakh professional boxer</h6>
+                            <p>He has held the WBO middleweight title since August 2022. As an amateur he won gold medals at the 2013 World Championships, 2013 Asian Championships and 2014 Asian Games. He also represented Kazakhstan at the 2016 Summer Olympics in the middleweight division, losing in the quarter-finals.</p>
+                            <div class="row about-list">
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        <label>Birthday</label>
+                                        <p>1st april 1993</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>Age</label>
+                                        <p>29 Yr</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                      <div class="media">
+                                        <label>Weight(s)</label>
+                                        <p>Middleweight</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>Wins</label>
+                                        <p>13/13</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+</div>
+     <div class="col card-wrapper" info-player="denis_ten">
+
+                        <div class="info go-to" id="info3">
+                            <h3 class="dark-color">Denis Ten</h3>
+                            <h6 class="theme-color lead">Kazakh figure skater</h6>
+                            <p>He was the 2014 Olympic bronze medalist, a two-time World medalist (silver in 2013, bronze in 2015), the 2015 Four Continents champion, the 2017 Winter Universiade champion, and a five-time national champion of Kazakhstan.</p>
+                            <div class="row about-list">
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        <label>Birthday</label>
+                                        <p>13rd june 1993</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>Age</label>
+                                        <p>25 Yr (Died 19th july 2018)</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                      <div class="media">
+                                        <label>Skating club</label>
+                                        <p>Kiyal Almaty</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>World standing</label>
+                                        <p>289.46</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+</div>
+    <div class="col card-wrapper" info-player="gennady_golovkin">
+
+                        <div class="info go-to" id="info4">
+                            <h3 class="dark-color">Gennady Golovkin "GGG"</h3>
+                            <h6 class="theme-color lead">Kazakh professional boxer</h6>
+                            <p>He has held multiple middleweight world championships, and is a two-time unified champion, having held the WBA (Super) title since 2022. Previously he held the unified WBA (Super), WBC and IBF titles between 2014 and 2023, and has challenged once for the undisputed super middleweight championship in 2022. He is also a two-time IBO middleweight champion, in his second reign since 2019.</p>
+                            <div class="row about-list">
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        <label>Birthday</label>
+                                        <p>8th april 1982</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>Age</label>
+                                        <p>40 Yr</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                      <div class="media">
+                                        <label>Weight(s)</label>
+                                        <p>Middleweight</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>Wins</label>
+                                        <p>45/42</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+</div>
+
+    <footer>
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">Kazakh sport celebrities classification</span>
+        </nav>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="dropzone.min.js"></script>
+<script src="app.js"></script>
+</html>
